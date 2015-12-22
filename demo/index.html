@@ -7,6 +7,7 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="stylesheet" href="../pil.css">
 	<script src="../pil.js"></script>
 	<style type="text/css">
 	body { padding: 50px 20%; }
@@ -14,28 +15,6 @@
 		max-width: 100%;
 		height: auto;
 	}
-	.pil {
-		background: #ddd;
-		margin-bottom: 30px;
-		position: relative;
-		overflow: hidden;
-	}
-	.pil img:first-of-type {
-		display: block;
-		opacity: 0;
-		transition: opacity 0.5s ease-out;
-	}
-	.pil-loaded img:first-of-type { opacity: 1; }
-	.pil-thumb img {
-		position: absolute;
-		top: 0;
-		left: 0;
-		transition: opacity 0.3s ease-out;
-		-webkit-filter: blur(30px);
-		filter: blur(30px);
-	}
-	.pil-thumb.pil-thumb-loaded img { opacity: 1; }
-	.pil-loaded .pil-thumb img { opacity: 0; }
 	</style>
 </head>
 <body>
