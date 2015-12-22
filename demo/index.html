@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Progressive Image Loading Demo</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="../pil.js"></script>
+	<style type="text/css">
+	body { padding: 50px 20%; }
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	.pil {
+		background: #ddd;
+		margin-bottom: 30px;
+		position: relative;
+		overflow: hidden;
+	}
+	.pil img:first-of-type {
+		display: block;
+		opacity: 0;
+		transition: opacity 0.5s ease-out;
+	}
+	.pil-loaded img:first-of-type { opacity: 1; }
+	.pil-thumb img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: opacity 0.3s ease-out;
+		-webkit-filter: blur(30px);
+		filter: blur(30px);
+	}
+	.pil-thumb.pil-thumb-loaded img { opacity: 1; }
+	.pil-loaded .pil-thumb img { opacity: 0; }
+	</style>
+</head>
+<body>
+
+	<figure class="pil">
+		<img src="https://images.unsplash.com/photo-1430651717504-ebb9e3e6795e" data-pil-thumb-url="img/1-thumb.jpg" data-full-width="5616" data-full-height="3744" alt="">
+	</figure>
+	<figure class="pil">
+		<img src="https://images.unsplash.com/photo-1441154283565-f88df169765a" data-pil-thumb-url="img/2-thumb.jpg" data-full-width="6000" data-full-height="4000" alt="">
+	</figure>
+	<figure class="pil">
+		<img src="https://images.unsplash.com/photo-1442606440995-d0be22c5f90f" data-pil-thumb-url="img/3-thumb.jpg" data-full-width="3264" data-full-height="4912" alt="">
+	</figure>
+
+	<script>
+	Pil.init();
+	</script>
+
+</body>
+</html>
