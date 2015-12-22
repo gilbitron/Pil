@@ -2,7 +2,14 @@
 A simple Javascript library for progressive image loading. Based on
 [Medium's progressive image loading](https://jmperezperez.com/medium-image-progressive-loading-placeholder/) technique.
 
-### Usage
+## Usage
+
+Include the script and CSS file:
+
+```html
+<link rel="stylesheet" href="pil.css">
+<script src="pil.js"></script>
+```
 
 Your images will need a wrapper with the `pil` class:
 
@@ -25,16 +32,6 @@ Finally you can initiate Pil by calling:
 ```js
 Pil.init();
 ```
-
-## Browsers
-
-Pil has been tested on:
-
-* Chrome
-* Firefox
-* Safari (Desktop + Mobile)
-* Opera
-* IE9+
 
 ## Contribute
 
