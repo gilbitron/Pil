@@ -2,6 +2,12 @@
 A simple Javascript library for progressive image loading. Based on
 [Medium's progressive image loading](https://jmperezperez.com/medium-image-progressive-loading-placeholder/) technique.
 
+## Demo
+
+[See the demo on CodePen](http://codepen.io/gilbitron/full/WrxgGM/)
+
+Note that the demo works best if you "Disable cache" in DevTools.
+
 ## Usage
 
 Include the script and CSS file:
